@@ -377,6 +377,10 @@ h2 {
   object-position: 50% 48%;
 }
 
+.auberge-rainbow img {
+  object-position: 50% 52%;
+}
+
 .philosophy {
   background: var(--ivory);
 }
@@ -499,12 +503,16 @@ h2 {
 }
 
 .sub-hero h1 {
-  font-size: clamp(2.95rem, 6.75vw, 6.2rem);
+  font-size: clamp(2.6rem, 5.9vw, 5.4rem);
   max-width: 8.5em;
 }
 
 .private-page h2 {
-  font-size: clamp(2rem, 5vw, 4.45rem);
+  font-size: clamp(1.78rem, 4.35vw, 3.85rem);
+}
+
+.private-page h3 {
+  font-size: clamp(1.22rem, 2.4vw, 2rem);
 }
 
 .private-intro {
@@ -545,7 +553,7 @@ h2 {
 
 .journey-heading h2 {
   color: var(--sea);
-  font-size: clamp(1.82rem, 3.85vw, 3.55rem);
+  font-size: clamp(1.62rem, 3.35vw, 3.1rem);
 }
 
 .journey-heading {
@@ -637,7 +645,7 @@ h2 {
 
 .charter-inner h2 {
   color: var(--ivory);
-  font-size: clamp(2.05rem, 4.8vw, 4.5rem);
+  font-size: clamp(1.84rem, 4.2vw, 3.9rem);
 }
 
 .charter-label {
@@ -697,7 +705,7 @@ h2 {
 
 .private-closing h2 {
   color: var(--ivory);
-  font-size: clamp(2rem, 4.8vw, 4.5rem);
+  font-size: clamp(1.8rem, 4.2vw, 3.9rem);
 }
 
 .reveal {
@@ -737,7 +745,7 @@ h2 {
   }
 
   .sub-hero h1 {
-    font-size: clamp(2.65rem, 11.8vw, 4.85rem);
+    font-size: clamp(2.35rem, 10.4vw, 4.2rem);
   }
 
   .hero-lead {
@@ -821,11 +829,11 @@ h2 {
   .journey-heading h2,
   .charter-inner h2,
   .private-closing h2 {
-    font-size: clamp(1.85rem, 10vw, 3rem);
+    font-size: clamp(1.62rem, 8.8vw, 2.6rem);
   }
 
   .journey-heading h2 {
-    font-size: clamp(1.7rem, 7.6vw, 2.45rem);
+    font-size: clamp(1.5rem, 6.6vw, 2.1rem);
   }
 
   .hero-description {
