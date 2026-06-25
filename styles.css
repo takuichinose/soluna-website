@@ -499,12 +499,12 @@ h2 {
 }
 
 .sub-hero h1 {
-  font-size: clamp(3.2rem, 7.8vw, 7.2rem);
+  font-size: clamp(2.95rem, 6.75vw, 6.2rem);
   max-width: 8.5em;
 }
 
 .private-page h2 {
-  font-size: clamp(2.25rem, 5.8vw, 5.15rem);
+  font-size: clamp(2rem, 5vw, 4.45rem);
 }
 
 .private-intro {
@@ -545,7 +545,7 @@ h2 {
 
 .journey-heading h2 {
   color: var(--sea);
-  font-size: clamp(2rem, 4.45vw, 4.1rem);
+  font-size: clamp(1.82rem, 3.85vw, 3.55rem);
 }
 
 .journey-heading {
@@ -637,7 +637,7 @@ h2 {
 
 .charter-inner h2 {
   color: var(--ivory);
-  font-size: clamp(2.35rem, 5.6vw, 5.2rem);
+  font-size: clamp(2.05rem, 4.8vw, 4.5rem);
 }
 
 .charter-label {
@@ -697,7 +697,7 @@ h2 {
 
 .private-closing h2 {
   color: var(--ivory);
-  font-size: clamp(2.2rem, 5.6vw, 5.2rem);
+  font-size: clamp(2rem, 4.8vw, 4.5rem);
 }
 
 .reveal {
@@ -737,7 +737,7 @@ h2 {
   }
 
   .sub-hero h1 {
-    font-size: clamp(3rem, 13vw, 5.45rem);
+    font-size: clamp(2.65rem, 11.8vw, 4.85rem);
   }
 
   .hero-lead {
@@ -821,11 +821,11 @@ h2 {
   .journey-heading h2,
   .charter-inner h2,
   .private-closing h2 {
-    font-size: clamp(2rem, 11.5vw, 3.35rem);
+    font-size: clamp(1.85rem, 10vw, 3rem);
   }
 
   .journey-heading h2 {
-    font-size: clamp(1.85rem, 8.6vw, 2.85rem);
+    font-size: clamp(1.7rem, 7.6vw, 2.45rem);
   }
 
   .hero-description {
