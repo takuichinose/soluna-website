@@ -209,6 +209,10 @@ h2 {
   margin-top: 1.45em;
 }
 
+.pc-break {
+  display: inline;
+}
+
 .section-grid {
   display: grid;
   gap: clamp(54px, 8vw, 132px);
@@ -307,9 +311,13 @@ h2 {
 }
 
 .experience-list li {
+  align-items: center;
   border-bottom: 1px solid var(--white-line);
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
   font-family: var(--font-serif);
-  font-size: clamp(1.35rem, 2.2vw, 2.2rem);
+  font-size: clamp(1.26rem, 2.04vw, 2.02rem);
   line-height: 1.2;
   padding: 24px 0;
 }
@@ -325,6 +333,17 @@ h2 {
 .experience-list a:hover {
   opacity: 1;
   transform: translateX(8px);
+}
+
+.soon-tag {
+  border: 1px solid rgba(255, 253, 248, 0.22);
+  color: rgba(255, 253, 248, 0.56);
+  flex: 0 0 auto;
+  font-family: var(--font-serif);
+  font-size: clamp(0.64rem, 0.72vw, 0.76rem);
+  letter-spacing: 0.12em;
+  line-height: 1;
+  padding: 7px 10px;
 }
 
 .island-block .experience-list li {
@@ -825,6 +844,10 @@ h2 {
     font-size: clamp(2.35rem, 13.5vw, 3.85rem);
   }
 
+  .pc-break {
+    display: none;
+  }
+
   .private-page h2,
   .journey-heading h2,
   .charter-inner h2,
@@ -841,8 +864,16 @@ h2 {
   }
 
   .experience-list li {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
     font-size: 1.42rem;
     padding: 20px 0;
+  }
+
+  .soon-tag {
+    font-size: 0.62rem;
+    padding: 6px 9px;
   }
 
   .media-tall,
