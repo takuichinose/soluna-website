@@ -499,8 +499,12 @@ h2 {
 }
 
 .sub-hero h1 {
-  font-size: clamp(3.7rem, 9vw, 8.5rem);
+  font-size: clamp(3.2rem, 7.8vw, 7.2rem);
   max-width: 8.5em;
+}
+
+.private-page h2 {
+  font-size: clamp(2.25rem, 5.8vw, 5.15rem);
 }
 
 .private-intro {
@@ -508,37 +512,82 @@ h2 {
 }
 
 .private-journey {
-  padding: clamp(88px, 12vw, 170px) clamp(24px, 6vw, 96px);
+  padding: clamp(74px, 10vw, 150px) clamp(24px, 6vw, 96px);
 }
 
 .journey-item {
-  border-top: 1px solid var(--line);
+  align-items: center;
   display: grid;
-  gap: clamp(34px, 6vw, 92px);
-  grid-template-columns: minmax(210px, 0.72fr) minmax(280px, 1fr);
+  gap: clamp(42px, 7vw, 112px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 0 auto;
-  max-width: 1120px;
-  padding: clamp(54px, 8vw, 112px) 0;
+  max-width: 1180px;
+  padding: clamp(68px, 9vw, 124px) 0;
+}
+
+.journey-item + .journey-item {
+  border-top: 1px solid var(--line);
+}
+
+.journey-reverse .journey-copy {
+  grid-column: 2;
+}
+
+.journey-reverse .journey-image {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.journey-copy {
+  max-width: 500px;
+  width: 100%;
 }
 
 .journey-heading h2 {
   color: var(--sea);
-  font-size: clamp(2.2rem, 5.2vw, 4.8rem);
+  font-size: clamp(2rem, 4.45vw, 4.1rem);
 }
 
-.private-image {
-  aspect-ratio: 16 / 9;
-  margin: clamp(34px, 6vw, 84px) auto;
-  max-width: 1120px;
+.journey-heading {
+  margin-bottom: clamp(28px, 4vw, 54px);
+}
+
+.journey-image {
+  aspect-ratio: 4 / 3.45;
+  margin: 0;
   overflow: hidden;
+  position: relative;
 }
 
-.private-image img {
+.journey-image img {
   filter: saturate(0.74) contrast(0.94) brightness(0.9);
   height: 100%;
   object-fit: cover;
-  object-position: 50% 42%;
   width: 100%;
+}
+
+.journey-image::after {
+  background: rgba(7, 29, 38, 0.1);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.journey-image-sailing img {
+  object-position: 54% 50%;
+}
+
+.journey-image-taste img {
+  object-position: 50% 60%;
+}
+
+.journey-image-pause img {
+  object-position: 54% 58%;
+}
+
+.journey-image-return img {
+  object-position: 50% 54%;
 }
 
 .schedule-table {
@@ -588,6 +637,7 @@ h2 {
 
 .charter-inner h2 {
   color: var(--ivory);
+  font-size: clamp(2.35rem, 5.6vw, 5.2rem);
 }
 
 .charter-label {
@@ -647,6 +697,7 @@ h2 {
 
 .private-closing h2 {
   color: var(--ivory);
+  font-size: clamp(2.2rem, 5.6vw, 5.2rem);
 }
 
 .reveal {
@@ -686,7 +737,7 @@ h2 {
   }
 
   .sub-hero h1 {
-    font-size: clamp(3.45rem, 15vw, 6.2rem);
+    font-size: clamp(3rem, 13vw, 5.45rem);
   }
 
   .hero-lead {
@@ -705,6 +756,16 @@ h2 {
   .experience-inner,
   .journey-item {
     grid-template-columns: 1fr;
+  }
+
+  .journey-reverse .journey-copy,
+  .journey-reverse .journey-image {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .journey-copy {
+    max-width: none;
   }
 
   .section-heading,
@@ -731,7 +792,7 @@ h2 {
     padding-right: 24px;
   }
 
-  .private-image {
+  .journey-image {
     aspect-ratio: 4 / 3.4;
   }
 }
@@ -754,6 +815,17 @@ h2 {
 
   h2 {
     font-size: clamp(2.35rem, 13.5vw, 3.85rem);
+  }
+
+  .private-page h2,
+  .journey-heading h2,
+  .charter-inner h2,
+  .private-closing h2 {
+    font-size: clamp(2rem, 11.5vw, 3.35rem);
+  }
+
+  .journey-heading h2 {
+    font-size: clamp(1.85rem, 8.6vw, 2.85rem);
   }
 
   .hero-description {
